@@ -1,0 +1,147 @@
+/*** Start Default CSS ***/
+:root {
+  --titleColour: #80582c;
+  --primaryFont: 'Dancing Script', cursive;
+  --secondaryFont: 'Quicksand', sans-serif;
+}
+
+body {
+  font-size: 0.9rem;
+  line-height: 2;
+}
+
+h1,h2,h3{
+  font-family: var(--primaryFont);
+  color: var(--titleColour);
+}
+
+p {
+  font-family: var(--secondaryFont);
+  letter-spacing: 0.0625rem;
+  font-weight: 500;
+  color: var(--titleColour);
+}
+
+.element-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .word {
+    padding: 0 10px;
+    color: var(--titleColour);
+    font-weight: 700;
+  }
+
+  .line {
+    flex-grow: 1;
+    border-top: 1px solid var(--titleColour);
+    margin: 0 10px;
+    height: 0; /* Add this line to ensure the line is visible */
+  }
+
+.table-new{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: unset !important;
+    border: unset !important;
+}
+
+.primary-button {
+border-radius: 0;
+  background-color: var(--titleColour);
+  font-size: 0.9rem;
+  border: 2px solid var(--titleColour);
+  text-transform: uppercase;
+}
+
+.primary-button:hover {
+  background-color: white !important;
+  font-size: 0.9rem;
+  border: 2px solid var(--titleColour);
+  color: var(--titleColour) !important;
+  text-transform: uppercase;
+}
+
+.textColor{
+  color: var(--titleColour);
+}
+
+#landing #section_two p{
+  text-align: justify !important;
+}
+
+.qty .count {
+    color: #000;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30px;
+    padding: 0 2px
+    ;min-width: 35px;
+    text-align: center;
+}
+.qty .plus {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    color: var(--titleColour);
+    font: 30px/1 'Quicksand', sans-serif;
+    text-align: center;
+    border-radius: 50%;
+    }
+.qty .minus {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    color: var(--titleColour);
+    font: 30px/1 'Quicksand', sans-serif;
+    text-align: center;
+    border-radius: 50%;
+    background-clip: padding-box;
+}
+
+/*Prevent text selection*/
+span{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+input{  
+    border: 0;
+    width: 2%;
+}
+nput::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input:disabled{
+    background-color:white;
+}
+
+.form-check .form-check-input {
+    margin-top: 8px;
+}
+
+.form-check-input:focus {
+    border-color: var(--titleColour);
+    outline: 0;
+    box-shadow: unset !important;
+    background-color: var(--titleColour) !important;
+}
+
+.form-check-input:checked {
+    bborder-color: var(--titleColour);
+    outline: 0;
+    box-shadow: unset !important;
+    background-color: var(--titleColour) !important;
+}
